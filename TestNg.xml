@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNGTests" verbose="2">
+
+	<test name="TestNGTests" >
+		<!-- <classes> <class name="PackageSelenium.ToSkipTest"> <methods> <include 
+			name="skipTestCheckTitle" /> <include name="skipTestCheckName" /> <exclude 
+			name="excludeTest" /> </methods> </class> <class name = "PackageSelenium.AnnotationSequence"> 
+			<methods> <include name="sanity" /> </methods> </class> </classes> -->
+		<!--<groups> <run> <include name="sanity"></include> </run> </groups> -->
+
+		<classes>
+			<class name="PackageSelenium.PriorityTestOne">
+			</class>
+			<class name="PackageSelenium.PriorityNewTest"></class>
+		</classes>
+	</test>
+</suite>
