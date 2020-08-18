@@ -52,13 +52,13 @@ public class ClassMain {
 //		HashSetElementPresent classObj = new HashSetElementPresent();
 //		classObj.checkElementPresent(argsNames);
 		
-		Set<Integer> argsIds=  new TreeSet<Integer>();
-		argsIds.add(12);
-		argsIds.add(5);
-		argsIds.add(120);
-		argsIds.add(18);
-		argsIds.add(14);
-		argsIds.add(82);
+//		Set<Integer> argsIds=  new TreeSet<Integer>();
+//		argsIds.add(12);
+//		argsIds.add(5);
+//		argsIds.add(120);
+//		argsIds.add(18);
+//		argsIds.add(14);
+//		argsIds.add(82);
 //		TreeSetToArray intArray = new TreeSetToArray();
 //		intArray.convertToIntArray(argsIds);
 		
