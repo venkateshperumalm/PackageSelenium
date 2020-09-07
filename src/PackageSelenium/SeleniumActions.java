@@ -20,7 +20,7 @@ public class SeleniumActions {
 		Thread.sleep(3000);
 		
 		Actions builder = new Actions(driver);
-		builder.moveToElement(driver.findElement(By.id("header_topcat"))).build().perform();
+		builder.moveToElement(driver.findElement(By.cssSelector("li.dropdown-submenu:nth-child(1) >a"))).build().perform();
 		Thread.sleep(3000);
 		
 		WebElement link = driver.findElement(By.cssSelector("#software-testing-certification-courses"));
@@ -43,8 +43,8 @@ public class SeleniumActions {
 				.build();
 		seriesOfActions.perform();
 		
-		Action ab;
-		ab = builder.sendKeys(act, "shoes").keyDown(search, Keys.SHIFT).keyUp(search, Keys.SHIFT).build();
+		//Action ab;
+		builder.sendKeys(act, "shoes").keyDown(search, Keys.SHIFT).keyUp(search, Keys.SHIFT).build().perform();
 		Thread.sleep(3000);
 		driver.quit();
 	}

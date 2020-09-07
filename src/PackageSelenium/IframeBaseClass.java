@@ -14,12 +14,11 @@ public class IframeBaseClass {
 
 	public static void takeScreenShot(WebDriver driver, String testcaseName ) throws IOException{
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd_hh.mm.ss").format(new Date());
-		String outputPath = "C:\\Users\\Venkat Yem\\workspace\\ProjectSelenium\\Others\\";
+		final String outputPath = "C:\\Users\\Venkat Yem\\workspace\\ProjectSelenium\\Others\\";
 		File destFile = new File(outputPath + testcaseName + "_" + timeStamp + ".png");
 		TakesScreenshot testSS = ((TakesScreenshot)driver);
 		File srcFile = testSS.getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(srcFile, destFile);
 
 	}
-
 }

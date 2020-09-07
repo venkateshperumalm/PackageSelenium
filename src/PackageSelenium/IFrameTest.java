@@ -34,7 +34,7 @@ public class IFrameTest {
 		System.out.println("Total frames in current page: " + framesCount);
 		Thread.sleep(3000);
 
-		String fastComXpath = "//a[@href = 'https://www.fastcompany.com/90430104/how-dotdash-formerly-about-com-took-over-the-internet']";
+		final String fastComXpath = "//a[@href = 'https://www.fastcompany.com/90430104/how-dotdash-formerly-about-com-took-over-the-internet']";
 		WebElement fastCompany = wDriver.findElement(By.xpath(fastComXpath));
 		JavascriptExecutor jse =  (JavascriptExecutor)wDriver;
 		jse.executeScript("arguments[0].scrollIntoView(true);", fastCompany);
