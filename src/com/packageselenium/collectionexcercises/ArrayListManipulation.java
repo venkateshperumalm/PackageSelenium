@@ -20,7 +20,7 @@ public class ArrayListManipulation {
 		//Sort ArrayList in descending order
 		System.out.println("Original ArrayList before sorting:");
 		ListIterator<Integer> iterator = argsIds.listIterator();
-		iterator.next();
+		//iterator.next();
 		iterator.add(45);
 		System.out.println("\nPrinting..");
 		//Use Collections.sort(Collection c) to sort collection of objects in ascending order 

@@ -20,12 +20,20 @@ public class AlertTest {
 		driver.manage().window().maximize();
 		driver.get("http://demo.guru99.com/test/delete_customer.php");
 	}
+<<<<<<< HEAD
 	@Test
 	public void handleAlert() {
 		driver.findElement(By.xpath("//input[@name ='cusid']")).sendKeys("63779");
 		//new WebDriverWait(driver, 3000).until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@name ='submit']")));
 		driver.findElement(By.xpath("//input[@name ='submit']")).click();
 		//new WebDriverWait(driver, 3000).until(ExpectedConditions.alertIsPresent());
+=======
+
+	@Test
+	public void handleAlert() {
+		driver.findElement(By.xpath("//input[@name ='cusid']")).sendKeys("63779");
+		driver.findElement(By.xpath("//input[@name ='submit']")).click();
+>>>>>>> eaab35223ddc0b337baee40bd04a8ee4b6ca60c8
 		Alert popup = driver.switchTo().alert();
 		Assert.assertEquals("Do you really want to delete this Customer?", popup.getText(),"Not the given message");
 		System.out.println("Actual message is :" + popup.getText());

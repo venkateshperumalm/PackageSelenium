@@ -66,7 +66,7 @@ public class CollectionIterateArray {
 		 * Since Set interface does not allow duplicates values
 		 * Used LinkedHashSet to preserves the order of the original collection
 		 */
-		System.out.println("\nConverting ArrayList to set to avoid duplicates");
+		System.out.println("\nConverting ArrayList to Set to avoid duplicates");
 		Set<String> arrList_2 = new LinkedHashSet<String>(listOne);
 		for(String a:arrList_2){
 			System.out.println(a);

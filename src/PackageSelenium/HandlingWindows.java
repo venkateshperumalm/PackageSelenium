@@ -42,8 +42,13 @@ public class HandlingWindows {
 		windowHandles.remove(firstWindow);
 		secWindow = windowHandles.iterator().next();
 		if(secWindow != firstWindow){
+<<<<<<< HEAD
 			//String secondWindow= secWindow;
 			wDriver.switchTo().window(secWindow);
+=======
+			String secondWindow= secWindow;
+			wDriver.switchTo().window(secondWindow);
+>>>>>>> eaab35223ddc0b337baee40bd04a8ee4b6ca60c8
 			Thread.sleep(3000);
 			System.out.println("Child window details: " + wDriver.getTitle() + "\nURL: " + wDriver.getCurrentUrl());
 		}
