@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
 public class TLDragAndDropDemo {
@@ -18,6 +19,7 @@ public class TLDragAndDropDemo {
 		wd.manage().deleteAllCookies();
 		wd.manage().window().maximize();
 		wd.manage().timeouts().implicitlyWait(4000, TimeUnit.MILLISECONDS);
+		//wd.manage().timeouts().
 		wd.switchTo().frame(wd.findElement(By.className("demo-frame")));
 		WebElement elementToBeMoved = wd.findElement(By.xpath("//div[@id='draggable']"));
 		Actions sourceToTarget = new Actions(wd);

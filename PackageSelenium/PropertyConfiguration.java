@@ -20,10 +20,10 @@ public class PropertyConfiguration {
 			System.out.println(exception.getMessage());
 		}
 	}
-	public static String getGeckoDriver(){
+	public String getGeckoDriver(){
 		return properties.getProperty("GECKO_DRIVER");
 	}
-	public static String getGeckoDriverPath(){
+	public String getGeckoDriverPath(){
 		return properties.getProperty("GECKO_DRIVER_PATH");
 	}
 	public String getDotDashUrl(){
@@ -32,7 +32,13 @@ public class PropertyConfiguration {
 	public String getSeleniumeasyUrl(){
 		return properties.getProperty("SELENIUMEASY_URL");
 	}
-	public static String getFormsSet(){
+	public String getFormsSet(){
 		return properties.getProperty("SWITCHTEXTBOXES");
+	}
+	public String getF3FrameworkUrl(){
+		return properties.getProperty("F3FRAMEWORK");
+	}
+	public String getGmailUrl(){
+		return properties.getProperty("GMAILURL");
 	}
 }

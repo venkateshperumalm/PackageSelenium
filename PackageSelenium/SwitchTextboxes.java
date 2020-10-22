@@ -15,19 +15,20 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class SwitchTextboxes extends PropertyConfiguration {
+public class SwitchTextboxes{
 	public SwitchTextboxes() throws IOException {
 		super();
 	}
 	WebDriver driver;
+	PropertyConfiguration pc = new PropertyConfiguration();
 
 	@BeforeMethod
 	public void setUp(){
-		System.setProperty(SwitchTextboxes.getGeckoDriver(), SwitchTextboxes.getGeckoDriverPath());
+		System.setProperty(pc.getGeckoDriver(), pc.getGeckoDriverPath());
 		driver = new FirefoxDriver();
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
-		driver.get(SwitchTextboxes.getFormsSet());
+		driver.get(pc.getFormsSet());
 	}
 	@Test
 	public void traverseInputBoxes() throws InterruptedException {

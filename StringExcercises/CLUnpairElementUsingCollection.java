@@ -21,11 +21,11 @@ public class CLUnpairElementUsingCollection {
 		}
 		findNoPairElement(toA);
 	}
-	public static void findNoPairElement(List<Integer> ele){
+	public static void findNoPairElement(List<Integer> setElements){
 		Set<Integer> tempSet = new HashSet<Integer>();
-		for(Integer i : ele )
-			if(!tempSet.add(i)){
-				tempSet.remove(i);
+		for(Integer elementToBeAdded : setElements )
+			if(!tempSet.add(elementToBeAdded)){
+				tempSet.remove(elementToBeAdded);
 			}
 		System.out.println("Unpaired element is: " +tempSet);
 	}
