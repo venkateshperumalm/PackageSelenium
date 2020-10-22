@@ -3,6 +3,9 @@ package StringExcercises;
 import java.util.Scanner;
 
 public class FirstSecondLargestNumber {
+	/*LOGIC: initial condition max value=0, if array element is greater than
+	 * max value then array element = max value and second lar=
+	 */
 
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);

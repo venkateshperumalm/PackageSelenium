@@ -1,4 +1,4 @@
-package StringExcercises;
+package com.packageselenium.collectionexcercises.w3resource.ArrayProblems;
 
 import java.util.Arrays;
 

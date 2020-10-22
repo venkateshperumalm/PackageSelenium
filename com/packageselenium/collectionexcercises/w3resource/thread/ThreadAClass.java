@@ -2,11 +2,11 @@ package com.packageselenium.collectionexcercises.w3resource.thread;
 
 public class ThreadAClass extends Thread{
 	//multiple access one
-	SyncClass s;
-	ThreadAClass(SyncClass sync){
-		this.s=sync;
+	ResourceClass rClass;
+	public ThreadAClass(ResourceClass sync) {
+		this.rClass = sync;
 	}
 	public void run(){
-		s.doMultiply(5);
+		rClass.doMultiply(5);
 	}
 }

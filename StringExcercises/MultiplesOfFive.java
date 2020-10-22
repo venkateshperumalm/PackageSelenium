@@ -14,7 +14,7 @@ public class MultiplesOfFive {
 
 	public static void main(String args[]){
 		MultiplesOfFive mul = new MultiplesOfFive();
-		mul.doMultiply(1, 0);
+		mul.doMultiply(5, 5);
 	}
 
 }

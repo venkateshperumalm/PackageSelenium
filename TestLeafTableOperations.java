@@ -55,7 +55,7 @@ public class TestLeafTableOperations {
 		for(String s : progressSet){
 			System.out.println(s);
 		}
-		System.out.println("Min progress:" + Collections.max(progressSet));
+		System.out.println("Min progress:" + Collections.min(progressSet));
 		wd.quit();
 	}
 

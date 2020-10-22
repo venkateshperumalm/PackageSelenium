@@ -14,7 +14,6 @@ public class StaticAndMain {
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		StaticAndMain consObj = new StaticAndMain();
 		System.out.println("its main method");
 		System.out.println(StaticAndMain.p);
 	}

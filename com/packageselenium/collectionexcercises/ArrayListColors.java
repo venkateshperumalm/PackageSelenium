@@ -1,4 +1,4 @@
-package com.packageselenium.collectionexcercises.w3resource.collections.arraylist;
+package com.packageselenium.collectionexcercises;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -13,10 +13,18 @@ public class ArrayListColors {
 		coloursList.add("Blue");
 		coloursList.add("Magenta");
 		coloursList.add(0, "element");
+		coloursList.add(0, "element");
+				try{
+					System.out.println(coloursList.get(-1));
+				}
+				catch(Exception ex){
+					System.out.println(ex.getMessage() + "\n");
+					System.out.println(ex.getClass() + "\n");
+					ex.printStackTrace();
+				}
 		displayIterator(coloursList);
 		System.out.println("Colours are ");
-		for(String a: coloursList)
-			System.out.println(a);
+		System.out.println(coloursList);
 	}
 	public static void displayIterator(List<String> cList){
 		Iterator<String> l = cList.listIterator();

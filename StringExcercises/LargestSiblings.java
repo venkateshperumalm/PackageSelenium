@@ -25,7 +25,8 @@ public class LargestSiblings {
 			reminderList.add(ab%10);
 			ab=ab/10;
 		}
-		Integer[] intArr = new Integer[reminderList.size()];
+		int sizeOfList = reminderList.size();
+		Integer[] intArr = new Integer[sizeOfList];
 		intArr = reminderList.toArray(intArr);
 		Arrays.sort(intArr,Collections.reverseOrder());
 		tempLength = intArr.length;

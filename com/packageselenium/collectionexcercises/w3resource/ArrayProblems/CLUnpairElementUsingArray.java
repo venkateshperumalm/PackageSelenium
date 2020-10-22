@@ -1,4 +1,4 @@
-package StringExcercises;
+package com.packageselenium.collectionexcercises.w3resource.ArrayProblems;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -11,9 +11,9 @@ public class CLUnpairElementUsingArray {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		int oddNum = sc.nextInt();
-		int arr[]=new int[oddNum];
-		for(int i=0;i<oddNum;i++){
-			arr[i]=sc.nextInt();
+		int arr[] = new int[oddNum];
+		for(int i = 0;i < oddNum;i++){
+			arr[i] = sc.nextInt();
 		}
 		solution(arr);
 	}

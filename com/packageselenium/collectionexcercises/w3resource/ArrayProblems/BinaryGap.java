@@ -1,4 +1,4 @@
-package StringExcercises;
+package com.packageselenium.collectionexcercises.w3resource.ArrayProblems;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -25,13 +25,14 @@ public class BinaryGap {
 			number = number / 2;
 		}
 		int lengthOfList = reminderList.size();
+		System.out.println("reminderList" + reminderList);
 		System.out.println("Binary value of given input:");
 		Collections.reverse(reminderList);
+		System.out.println("Collections.reverse(reminderList): " + reminderList);
 		//Reversing binary form of given input
-		System.out.println("Reverse" +reminderList);
-		for(int ij = lengthOfList - 1;ij >= 0;ij--){
-			System.out.print(reminderList.get(ij));
-		}
+		//		for(int ij = lengthOfList - 1;ij >= 0;ij--){
+		//			System.out.print(reminderList.get(ij));
+		//		}
 		Map<Integer,Integer> zerosCountMap = findZerosCount(reminderList, lengthOfList);
 
 		Map.Entry<Integer, Integer> maxEntry = null;
@@ -67,6 +68,5 @@ public class BinaryGap {
 			}
 		}
 		return zerosCountMap;	
-
 	}
 }

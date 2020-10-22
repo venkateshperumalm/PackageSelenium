@@ -24,14 +24,13 @@ public class ArrayListManipulation {
 		iterator.add(45);
 		System.out.println("\nPrinting..");
 		//Use Collections.sort(Collection c) to sort collection of objects in ascending order 
+
 		Collections.sort(argsIds);
 		for(int i : argsIds){
 			System.out.println(i);
 		}
-
-		//		System.out.println("\nArrayList After sorting in Descending order:");
-		//		Comparator<Integer> comp = Collections.reverseOrder();
-		//		Collections.sort(argsIds, comp);
-		//		System.out.println(argsIds);
+		System.out.println("\nArrayList After sorting in Descending order:");
+		Collections.sort(argsIds, Collections.reverseOrder());
+		System.out.println("\n" + argsIds);
 	}
 }

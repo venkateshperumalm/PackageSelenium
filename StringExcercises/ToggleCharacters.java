@@ -7,7 +7,7 @@ public class ToggleCharacters {
 		System.out.println(toggleSb(sb));
 	}
 	public static String toggleSb(String sb){
-		if(sb == null || sb == ""){
+		if(sb == null || sb == " "){
 			return "Please enter a string!! and run again";
 		}
 		char[] toC = sb.toCharArray();
